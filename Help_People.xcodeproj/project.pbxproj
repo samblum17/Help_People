@@ -35,6 +35,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A89559322FC73B8004DFF63 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9A89559422FC73BD004DFF63 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9A89559522FC73C0004DFF63 /* New Group2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group2";
+			sourceTree = "<group>";
+		};
+		9A89559622FC73C4004DFF63 /* New Group3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group3";
+			sourceTree = "<group>";
+		};
 		E46B942022FC664B007FE7D3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +82,10 @@
 		E46B942B22FC664B007FE7D3 /* Help_People */ = {
 			isa = PBXGroup;
 			children = (
+				9A89559622FC73C4004DFF63 /* New Group3 */,
+				9A89559522FC73C0004DFF63 /* New Group2 */,
+				9A89559422FC73BD004DFF63 /* ViewController */,
+				9A89559322FC73B8004DFF63 /* Storyboards */,
 				E46B942C22FC664B007FE7D3 /* AppDelegate.swift */,
 				E46B942E22FC664B007FE7D3 /* ViewController.swift */,
 				E46B943022FC664B007FE7D3 /* Main.storyboard */,
