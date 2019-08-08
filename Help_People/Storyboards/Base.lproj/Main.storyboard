@@ -163,7 +163,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ei9-ay-Oc8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="v5u-pt-QWa"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="icons8-customer-50" selectedImage="icons8-customer-50-2" id="v5u-pt-QWa"/>
                     <connections>
                         <outlet property="eventLabel" destination="rU4-Lf-m7O" id="mjR-yh-KaC"/>
                         <outlet property="eventTableView" destination="pLj-R3-e6O" id="NjW-2Z-e1w"/>
@@ -213,6 +213,8 @@
     </scenes>
     <resources>
         <image name="fullsizeoutput_4bbb" width="3024" height="4032"/>
+        <image name="icons8-customer-50" width="25" height="25"/>
+        <image name="icons8-customer-50-2" width="25" height="25"/>
         <image name="unnamed" width="512" height="512"/>
     </resources>
 </document>
