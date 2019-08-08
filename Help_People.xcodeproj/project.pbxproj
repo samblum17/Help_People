@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A89559822FC7794004DFF63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A89559722FC7794004DFF63 /* GoogleService-Info.plist */; };
+		9AF42B9E22FC7DB4007F59A6 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF42B9D22FC7DB4007F59A6 /* ProfileController.swift */; };
+		D386F2D8C9A2766115CA00A7 /* Pods_Help_People.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCEEC815ED8E5E2A110FE9AC /* Pods_Help_People.framework */; };
 		E46B942D22FC664B007FE7D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B942C22FC664B007FE7D3 /* AppDelegate.swift */; };
 		E46B942F22FC664B007FE7D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B942E22FC664B007FE7D3 /* ViewController.swift */; };
 		E46B943222FC664B007FE7D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46B943022FC664B007FE7D3 /* Main.storyboard */; };
@@ -15,6 +18,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		920057E2ABB8209A4B0D2F67 /* Pods-Help_People.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help_People.debug.xcconfig"; path = "Target Support Files/Pods-Help_People/Pods-Help_People.debug.xcconfig"; sourceTree = "<group>"; };
+		9A89559722FC7794004DFF63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9AF42B9D22FC7DB4007F59A6 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		9AF42B9F22FC8080007F59A6 /* Help_People.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Help_People.entitlements; sourceTree = "<group>"; };
+		AF9B17E0ADF7335470A7402E /* Pods-Help_People.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help_People.release.xcconfig"; path = "Target Support Files/Pods-Help_People/Pods-Help_People.release.xcconfig"; sourceTree = "<group>"; };
+		DCEEC815ED8E5E2A110FE9AC /* Pods_Help_People.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Help_People.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46B942922FC664B007FE7D3 /* Help_People.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Help_People.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46B942C22FC664B007FE7D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E46B942E22FC664B007FE7D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,15 +39,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D386F2D8C9A2766115CA00A7 /* Pods_Help_People.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		029EB24DE40C6CC86AC9C160 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCEEC815ED8E5E2A110FE9AC /* Pods_Help_People.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		669F96301A326283A46B181F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				920057E2ABB8209A4B0D2F67 /* Pods-Help_People.debug.xcconfig */,
+				AF9B17E0ADF7335470A7402E /* Pods-Help_People.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9A89559322FC73B8004DFF63 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				E46B943522FC664D007FE7D3 /* LaunchScreen.storyboard */,
+				E46B943022FC664B007FE7D3 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -46,22 +75,20 @@
 		9A89559422FC73BD004DFF63 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E46B942E22FC664B007FE7D3 /* ViewController.swift */,
+				9AF42B9D22FC7DB4007F59A6 /* ProfileController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		9A89559522FC73C0004DFF63 /* New Group2 */ = {
+		9A89559522FC73C0004DFF63 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E46B943E22FC6FD6007FE7D3 /* Help_People.entitlements */,
+				E46B943322FC664D007FE7D3 /* Assets.xcassets */,
+				E46B942C22FC664B007FE7D3 /* AppDelegate.swift */,
 			);
-			path = "New Group2";
-			sourceTree = "<group>";
-		};
-		9A89559622FC73C4004DFF63 /* New Group3 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group3";
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E46B942022FC664B007FE7D3 = {
@@ -69,6 +96,8 @@
 			children = (
 				E46B942B22FC664B007FE7D3 /* Help_People */,
 				E46B942A22FC664B007FE7D3 /* Products */,
+				669F96301A326283A46B181F /* Pods */,
+				029EB24DE40C6CC86AC9C160 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,17 +112,12 @@
 		E46B942B22FC664B007FE7D3 /* Help_People */ = {
 			isa = PBXGroup;
 			children = (
-				9A89559622FC73C4004DFF63 /* New Group3 */,
-				9A89559522FC73C0004DFF63 /* New Group2 */,
+				9AF42B9F22FC8080007F59A6 /* Help_People.entitlements */,
+				9A89559522FC73C0004DFF63 /* Helpers */,
 				9A89559422FC73BD004DFF63 /* ViewController */,
 				9A89559322FC73B8004DFF63 /* Storyboards */,
-				E46B943E22FC6FD6007FE7D3 /* Help_People.entitlements */,
-				E46B942C22FC664B007FE7D3 /* AppDelegate.swift */,
-				E46B942E22FC664B007FE7D3 /* ViewController.swift */,
-				E46B943022FC664B007FE7D3 /* Main.storyboard */,
-				E46B943322FC664D007FE7D3 /* Assets.xcassets */,
-				E46B943522FC664D007FE7D3 /* LaunchScreen.storyboard */,
 				E46B943822FC664D007FE7D3 /* Info.plist */,
+				9A89559722FC7794004DFF63 /* GoogleService-Info.plist */,
 			);
 			path = Help_People;
 			sourceTree = "<group>";
@@ -105,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E46B943B22FC664D007FE7D3 /* Build configuration list for PBXNativeTarget "Help_People" */;
 			buildPhases = (
+				48187753C36DCC451C84BB30 /* [CP] Check Pods Manifest.lock */,
 				E46B942522FC664B007FE7D3 /* Sources */,
 				E46B942622FC664B007FE7D3 /* Frameworks */,
 				E46B942722FC664B007FE7D3 /* Resources */,
+				DA6925BA46FC099CD654644C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,12 +188,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46B943722FC664D007FE7D3 /* LaunchScreen.storyboard in Resources */,
+				9A89559822FC7794004DFF63 /* GoogleService-Info.plist in Resources */,
 				E46B943422FC664D007FE7D3 /* Assets.xcassets in Resources */,
 				E46B943222FC664B007FE7D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48187753C36DCC451C84BB30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Help_People-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA6925BA46FC099CD654644C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Help_People/Pods-Help_People-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Help_People/Pods-Help_People-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Help_People/Pods-Help_People-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E46B942522FC664B007FE7D3 /* Sources */ = {
@@ -176,6 +245,7 @@
 			files = (
 				E46B942F22FC664B007FE7D3 /* ViewController.swift in Sources */,
 				E46B942D22FC664B007FE7D3 /* AppDelegate.swift in Sources */,
+				9AF42B9E22FC7DB4007F59A6 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,11 +389,12 @@
 		};
 		E46B943C22FC664D007FE7D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920057E2ABB8209A4B0D2F67 /* Pods-Help_People.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Help_People/Help_People.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AXQRK9KY57;
+				DEVELOPMENT_TEAM = 2Y7PPXA97Y;
 				INFOPLIST_FILE = Help_People/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,11 +409,12 @@
 		};
 		E46B943D22FC664D007FE7D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF9B17E0ADF7335470A7402E /* Pods-Help_People.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Help_People/Help_People.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AXQRK9KY57;
+				DEVELOPMENT_TEAM = 2Y7PPXA97Y;
 				INFOPLIST_FILE = Help_People/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
