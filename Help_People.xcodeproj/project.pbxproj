@@ -22,6 +22,7 @@
 		E46B943322FC664D007FE7D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46B943622FC664D007FE7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E46B943822FC664D007FE7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46B943E22FC6FD6007FE7D3 /* Help_People.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Help_People.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 				9A89559522FC73C0004DFF63 /* New Group2 */,
 				9A89559422FC73BD004DFF63 /* ViewController */,
 				9A89559322FC73B8004DFF63 /* Storyboards */,
+				E46B943E22FC6FD6007FE7D3 /* Help_People.entitlements */,
 				E46B942C22FC664B007FE7D3 /* AppDelegate.swift */,
 				E46B942E22FC664B007FE7D3 /* ViewController.swift */,
 				E46B943022FC664B007FE7D3 /* Main.storyboard */,
@@ -128,6 +130,11 @@
 				TargetAttributes = {
 					E46B942822FC664B007FE7D3 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -314,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Help_People/Help_People.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AXQRK9KY57;
 				INFOPLIST_FILE = Help_People/Info.plist;
@@ -332,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Help_People/Help_People.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AXQRK9KY57;
 				INFOPLIST_FILE = Help_People/Info.plist;
