@@ -10,7 +10,7 @@ import UIKit
 
 class ProfileController: UIViewController {
     
-    
+
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var usernameLabel: UILabel!
     @IBOutlet var eventLabel: UILabel!
@@ -36,6 +36,32 @@ class ProfileController: UIViewController {
         
        
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.profileImageView.isHidden = true
+        var imageURLString = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQCsSPdrdZf2hKyx5qHszrMOFMuXj1nLkxU4eu0pfV_8hIczR"
+        var imageURL = URL(string: imageURLString)
+
+        let task = URLSession.shared.dataTask(with: imageURL!) { (data,response, error) in
+            
+            guard let imageData = data else {
+                return
+            }
+            //Highest priority queue
+            DispatchQueue.main.async {
+                let image = UIImage(data: data!)
+                self.profileImageView.image = image
+                self.profileImageView.isHidden = false
+            }
+            
+            
+        }
+        task.resume()
+    }
+    
+    
+    
+    
     
 
 

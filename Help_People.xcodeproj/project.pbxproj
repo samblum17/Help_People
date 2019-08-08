@@ -80,6 +80,7 @@
 		9A7BA7C122FC9C2C008BAD3D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E4D549D022FCB2B4008210B6 /* Profile.swift */,
 				9A7BA7C222FC9C42008BAD3D /* Event.swift */,
 			);
 			path = Models;
@@ -97,7 +98,6 @@
 		9A89559422FC73BD004DFF63 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				E4D549CE22FCA2E1008210B6 /* ProfileEventTableViewCell.swift */,
 				E46B942E22FC664B007FE7D3 /* ViewController.swift */,
 				9AF42B9D22FC7DB4007F59A6 /* ProfileController.swift */,
 				9AF42BA022FC9118007F59A6 /* HomePageController.swift */,
@@ -121,6 +121,7 @@
 			children = (
 				9AF42BA322FC961E007F59A6 /* HomePageCell.swift */,
 				9A7BA7C622FCA9CB008BAD3D /* CommentsCell.swift */,
+				E4D549CE22FCA2E1008210B6 /* ProfileEventTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -146,7 +147,6 @@
 		E46B942B22FC664B007FE7D3 /* Help_People */ = {
 			isa = PBXGroup;
 			children = (
-				E4D549D022FCB2B4008210B6 /* Profile.swift */,
 				9A7BA7C122FC9C2C008BAD3D /* Models */,
 				9AF42BA222FC9214007F59A6 /* Cells */,
 				9AF42B9F22FC8080007F59A6 /* Help_People.entitlements */,
