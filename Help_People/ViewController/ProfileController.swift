@@ -40,7 +40,7 @@ class ProfileController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.profileImageView.isHidden = true
         
-        //Sample image load
+//
         var imageURLString = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQCsSPdrdZf2hKyx5qHszrMOFMuXj1nLkxU4eu0pfV_8hIczR"
         var imageURL = URL(string: imageURLString)
 
