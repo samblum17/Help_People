@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sdc-y2-J8r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PJ9-7Q-saE">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,6 +26,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="twL-KS-gvv" kind="show" id="cvD-DJ-ecd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btI-Wo-sJw" customClass="DarkBlueButton" customModule="Help_People" customModuleProvider="target">
                                 <rect key="frame" x="16" y="718" width="343" height="40"/>
@@ -35,6 +38,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Jet-2S-ANU" kind="show" id="0Kg-Rb-v2H"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Your Journey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-Hi-8hP">
                                 <rect key="frame" x="71" y="137" width="232" height="36"/>
@@ -50,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qag-Mp-4Ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-959.20000000000005" y="-674.6305418719212"/>
+            <point key="canvasLocation" x="57" y="-645"/>
         </scene>
         <!--Login Page Controller-->
         <scene sceneID="C00-7k-MDU">
@@ -145,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmW-oo-k5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.59999999999999" y="-682.01970443349751"/>
+            <point key="canvasLocation" x="1329" y="-645"/>
         </scene>
         <!--Preferences Controller-->
         <scene sceneID="fFA-Dp-Q6Z">
@@ -763,7 +769,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1475483768296-6163e08872a1-2" translatesAutoresizingMaskIntoConstraints="NO" id="VIi-B3-s1X">
-                                <rect key="frame" x="-16" y="62" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="62" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.035672488410000001" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -778,6 +784,7 @@
                         <outlet property="username" destination="aVI-Kz-Vid" id="dgN-Sq-RsG"/>
                         <outlet property="welcome_banner" destination="LgK-a2-JaS" id="9aN-6V-UVl"/>
                         <outlet property="zipcode" destination="3WO-JL-PtW" id="ccX-kM-gGX"/>
+                        <segue destination="R5f-fS-UhC" kind="show" identifier="toPreferences" id="OIP-yK-Nab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VRL-QN-In7" userLabel="First Responder" sceneMemberID="firstResponder"/>
