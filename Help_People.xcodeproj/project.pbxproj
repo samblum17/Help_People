@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		67B98FF622FCB18D0019BE58 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B98FF522FCB18D0019BE58 /* PreferencesController.swift */; };
 		67B98FFA22FCB7810019BE58 /* preferencesEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B98FF922FCB7810019BE58 /* preferencesEventCell.swift */; };
+		8706FC4822FD009200420E26 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706FC4722FD009200420E26 /* RegisterViewController.swift */; };
 		9A1ECDFB22FCCC440083F29C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1ECDFA22FCCC440083F29C /* UserService.swift */; };
 		9A1ECDFF22FCF8140083F29C /* LoginPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1ECDFE22FCF8140083F29C /* LoginPageController.swift */; };
 		9A1ECE0122FCF8D00083F29C /* SplashPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1ECE0022FCF8D00083F29C /* SplashPageController.swift */; };
-		67B98FF622FCB18D0019BE58 /* PreferencesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B98FF522FCB18D0019BE58 /* PreferencesController.swift */; };
-		67B98FFA22FCB7810019BE58 /* preferencesEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B98FF922FCB7810019BE58 /* preferencesEventCell.swift */; };
-		8706FC4822FD009200420E26 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8706FC4722FD009200420E26 /* RegisterViewController.swift */; };
 		9A7BA7C322FC9C42008BAD3D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BA7C222FC9C42008BAD3D /* Event.swift */; };
 		9A7BA7C522FCA587008BAD3D /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BA7C422FCA587008BAD3D /* EventDetailController.swift */; };
 		9A7BA7C722FCA9CB008BAD3D /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BA7C622FCA9CB008BAD3D /* CommentsCell.swift */; };
@@ -468,7 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Help_People/Help_People.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AXQRK9KY57;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Help_People/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,7 +486,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Help_People/Help_People.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AXQRK9KY57;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Help_People/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

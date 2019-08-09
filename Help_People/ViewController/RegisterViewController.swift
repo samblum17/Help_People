@@ -9,6 +9,13 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
+    var firstText: String = ""
+    var surnameText: String = ""
+    var zipText: String?
+    var userText: String?
+    var passwordText: String?
+    var fullName: String = ""
+    
     @IBOutlet weak var welcome_banner: UILabel!
     
     @IBOutlet weak var firstname: UITextField!
@@ -25,26 +32,29 @@ class RegisterViewController: UIViewController {
     //    let request = URLRequest(url: NSURL(string: ))
     
     @IBAction func create_user(_ sender: Any) {
-        let firstText = firstname.text
-        let surnameText = surname.text
-        let zipText = zipcode.text
-        let userText = username.text
-        let passwordText = pass1.text
+        firstText = firstname.text ?? ""
+        surnameText = surname.text ?? ""
+        zipText = zipcode.text
+        userText = username.text
+        passwordText = pass1.text
         
         //        if firstText?.isEmpty || surnameText?.isEmpty || zipText?.isEmpty || userText?.isEmpty || passwordText?.isEmpty {
-        print("first",firstText!.isEmpty)
         
-        if firstText!.isEmpty || surnameText!.isEmpty || zipText!.isEmpty || userText!.isEmpty || passwordText!.isEmpty {
+        if firstText.isEmpty || surnameText.isEmpty || zipText!.isEmpty || userText!.isEmpty || passwordText!.isEmpty {
             let message = "Please fill out all of the fields below"
             let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
             let okay = UIAlertAction(title: "Dismiss", style: .cancel, handler: nil)
             alert.addAction(okay)
             self.present(alert, animated: true, completion: nil)
+            return
         }
         
-        var fullName = firstText!.trimmingCharacters(in: .whitespacesAndNewlines)
-        fullName += " " + surnameText!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+        fullName = firstText.trimmingCharacters(in: .whitespaces)
+        fullName += " " + surnameText.trimmingCharacters(in: .whitespaces)
+    
+            
+        performSegue(withIdentifier: "toPreferences", sender: nil)
+    }
         //
         //
         //        let url = URL(string: "/register")!
@@ -54,6 +64,7 @@ class RegisterViewController: UIViewController {
         //        var query_params = ["username", "&password", "&event_type", "&money_req", "&event_size", "&zip_code"]
         //
         //        var link = query_params[0] + fullname + query_params[1] + password + query_params[2]
+        
         //
         //        let parameters: [String: Any] = [
         //            "name": fullName,
@@ -64,8 +75,6 @@ class RegisterViewController: UIViewController {
         //        request.httpBody = parameters.percentEscaped().data(using: .utf8)
         //
         //        if request.httpBody == 0:
-        
-    }
     /*
      // MARK: - Navigation
      
@@ -76,5 +85,16 @@ class RegisterViewController: UIViewController {
      }
      */
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let PreferencesVC = segue.destination as! PreferencesController
+        
+        let parameters: [String: Any] = [
+            "name": fullName,
+            "zipcode": zipText,
+            "password": passwordText,
+            "username": userText
+        ]
+        
+        PreferencesVC.data = parameters
+    }
 }
-

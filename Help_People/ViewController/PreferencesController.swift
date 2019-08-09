@@ -17,10 +17,12 @@ class PreferencesController: UIViewController,UICollectionViewDelegate, UICollec
     var textArray = ["Marathon Fundraisers","Food Banks", "Clothing Drives","Blood Donation"]
     var imgArray: [UIImage] = [UIImage(named: "marathons")!,(UIImage(named: "foodBank"))! ,UIImage(named: "clothesDrive")!,UIImage(named: "bloodDrive")!]
     
+    var data: [String: Any]?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("data is", data)
         collectionView.dataSource = self
         collectionView.delegate = self
             }
