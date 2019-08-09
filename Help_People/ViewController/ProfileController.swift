@@ -79,7 +79,7 @@ class ProfileController: UIViewController {
         //When no events
         
         if User.events?.isEmpty ?? true {
-            emptyViewLabel.text = "Welcome to Help People!\nTo join your first event, select one from the home page and sign up."
+            emptyViewLabel.text = "Welcome to the\nCapital One Community App!\nTo join your first event, select one from the home page and sign up."
             emptyTableView.isHidden = false
             activityIndicatorView.stopAnimating()
             eventTableView.separatorStyle = .none

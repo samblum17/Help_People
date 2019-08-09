@@ -42,13 +42,24 @@
                                     <segue destination="Jet-2S-ANU" kind="show" id="0Kg-Rb-v2H"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Your Journey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-Hi-8hP">
-                                <rect key="frame" x="71" y="137" width="232" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capital One Community" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-Hi-8hP">
+                                <rect key="frame" x="18" y="76" width="339" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Your Journey Here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aX-R9-n4S">
+                                <rect key="frame" x="54" y="206" width="274" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1200px-Capital_One_logo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="07b-4y-xvl">
+                                <rect key="frame" x="67" y="305" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bXA-lX-Uii"/>
@@ -56,7 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qag-Mp-4Ty" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="-645"/>
+            <point key="canvasLocation" x="56.799999999999997" y="-645.07389162561583"/>
         </scene>
         <!--Login Page Controller-->
         <scene sceneID="C00-7k-MDU">
@@ -489,19 +500,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zZ-AR-7qb">
                                 <rect key="frame" x="20" y="393" width="339" height="300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdP-FX-3vN">
-                                        <rect key="frame" x="32" y="71" width="274" height="114"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdP-FX-3vN">
+                                        <rect key="frame" x="8" y="21" width="323" height="249"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="GZT-NT-muY" firstAttribute="trailing" secondItem="ZdP-FX-3vN" secondAttribute="trailing" constant="33" id="1Or-pU-4JC"/>
-                                    <constraint firstItem="ZdP-FX-3vN" firstAttribute="leading" secondItem="GZT-NT-muY" secondAttribute="leading" constant="32" id="Cve-rM-CXU"/>
-                                    <constraint firstItem="ZdP-FX-3vN" firstAttribute="top" secondItem="GZT-NT-muY" secondAttribute="top" constant="71" id="LTV-ZW-RML"/>
-                                    <constraint firstItem="GZT-NT-muY" firstAttribute="bottom" secondItem="ZdP-FX-3vN" secondAttribute="bottom" constant="115" id="viV-bp-Ipz"/>
+                                    <constraint firstItem="GZT-NT-muY" firstAttribute="trailing" secondItem="ZdP-FX-3vN" secondAttribute="trailing" constant="8" id="1Or-pU-4JC"/>
+                                    <constraint firstItem="ZdP-FX-3vN" firstAttribute="leading" secondItem="GZT-NT-muY" secondAttribute="leading" constant="8" id="Cve-rM-CXU"/>
+                                    <constraint firstItem="ZdP-FX-3vN" firstAttribute="top" secondItem="GZT-NT-muY" secondAttribute="top" constant="21" id="LTV-ZW-RML"/>
+                                    <constraint firstItem="GZT-NT-muY" firstAttribute="bottom" secondItem="ZdP-FX-3vN" secondAttribute="bottom" constant="30" id="viV-bp-Ipz"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="GZT-NT-muY"/>
                             </view>
@@ -842,6 +853,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1200px-Capital_One_logo.svg" width="1200" height="432"/>
         <image name="foodBank" width="232" height="217"/>
         <image name="icons8-customer-50" width="25" height="25"/>
         <image name="icons8-customer-50-2" width="25" height="25"/>
