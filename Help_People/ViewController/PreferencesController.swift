@@ -10,6 +10,7 @@ import UIKit
 
 class PreferencesController: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
+    @IBOutlet weak var moneyRequiredSlider: UISlider!
     @IBOutlet weak var eventSizeSlider: UISlider!
     @IBOutlet weak var collectionView: UICollectionView!
     
