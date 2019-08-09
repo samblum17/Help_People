@@ -42,20 +42,13 @@ class ProfileController: UIViewController {
         
         eventTableView.separatorStyle = .none
         activityIndicatorView.startAnimating()
-       
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        //Load in profile info
-        nameLabel.text = User.name
-        usernameLabel.text = User.username
         
         self.profileImageView.isHidden = true
         
-//
+        //
         var imageURLString = User.profilePicString!
         var imageURL = URL(string: imageURLString)
-
+        
         let task = URLSession.shared.dataTask(with: imageURL!) { (data,response, error) in
             
             guard let imageData = data else {
@@ -71,6 +64,15 @@ class ProfileController: UIViewController {
             
         }
         task.resume()
+       
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Load in profile info
+        nameLabel.text = User.name
+        usernameLabel.text = User.username
+        
+        
         
         //When no events
         

@@ -10,12 +10,14 @@ import Foundation
 
 let User = _User()
 
-class _User {
+class _User: Codable {
     
     var name: String?
     var username: String?
-    var zipCode: String?
-    var profilePicString: String?
+//    var zipCode: String?
+//    var profilePicString: String? = "https://thispersondoesnotexist.com/image"
+    var status: Bool?
+    var events: [String]?
     
     init() {
 

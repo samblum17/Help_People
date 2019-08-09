@@ -100,8 +100,6 @@ class RegisterViewController: UIViewController {
         User.username = userText
         User.zipCode = zipText
         
-        //Generate random profile picture for demo purposes
-        User.profilePicString = "https://thispersondoesnotexist.com/image"
 
         PreferencesVC.data = parameters
     }

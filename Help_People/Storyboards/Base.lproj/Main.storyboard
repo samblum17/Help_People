@@ -103,7 +103,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggx-pE-8gH">
                                         <rect key="frame" x="0.0" y="158.66666666666666" width="41.666666666666664" height="20.333333333333343"/>
@@ -120,6 +120,10 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="Jet-2S-ANU" eventType="touchUpInside" id="x0c-r3-bHB"/>
+                                            <segue destination="sdc-y2-J8r" kind="show" id="wGV-wt-ibT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -148,6 +152,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bDW-lY-0WV"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordText" destination="AYi-IT-r2D" id="drb-vP-yQK"/>
+                        <outlet property="usernameText" destination="LFJ-kE-Z1j" id="6SV-dE-vu5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmW-oo-k5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -808,5 +816,8 @@
         <image name="photo-1475483768296-6163e08872a1-2" width="1500" height="1000"/>
         <image name="unnamed" width="512" height="512"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wGV-wt-ibT"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
