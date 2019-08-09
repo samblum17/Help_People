@@ -22,28 +22,43 @@ class PreferencesController: UIViewController,UICollectionViewDelegate, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("data is", data)
+        
         collectionView.dataSource = self
         collectionView.delegate = self
-            }
+                    }
     
     @IBAction func nextButton(_ sender: Any) {
-        var preferences = ["true","true","true","true"]
-        
+        var eventVal = String(eventSizeSlider.value)
+        var moneyVal = String(moneyRequiredSlider.value)
+        data?.updateValue(Int(eventVal), forKey: "eventSize")
+        data?.updateValue(Int(moneyVal), forKey: "moneyRequired")
+        data?.updateValue(true, forKey: "marathons")
+        data?.updateValue(true, forKey: "foodBank")
+        data?.updateValue(true, forKey: "clothesDrive")
+        data?.updateValue(true, forKey: "bloodDrive")
+
         let cells = collectionView.visibleCells
         for cell in cells {
             let cell = cell as! preferencesEventCell
-            if cell.preferencesImg.alpha < 1.0{
+            if cell.preferencesImg.alpha == 1.0{
                 var index = collectionView.indexPath(for: cell)
-                preferences[index!.row] = "false"
+                switch index?.row {
+                case 0:
+                    data?.updateValue(false, forKey: "marathons")
+                case 1:
+                    data?.updateValue(false, forKey: "foodBank")
+                case 2:
+                    data?.updateValue(false, forKey: "clothesDrive")
+                case 3:
+                    data?.updateValue(false, forKey: "bloodDrive")
+                default:
+                    return print("you are a failure")
+                }
             }
         
         }
-        let data: [String: Any] = [
-            "preference": preferences,
-            "eventSize": Int(eventSizeSlider.value)
-        ]
         print(data)
+    
         
     }
     
