@@ -147,8 +147,6 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="-682.01970443349751"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
         <!--Preferences Controller-->
         <scene sceneID="fFA-Dp-Q6Z">
             <objects>
@@ -654,7 +652,7 @@
     </scenes>
     <resources>
         <image name="icons8-customer-50" width="25" height="25"/>
-        <image name="icons8-customer-50-2" width="25" height="25"/>
+        <!--image name="icons8-customer-50-2" width="25" height="25"/-->
         <image name="icons8-home-page-50" width="25" height="25"/>
         <image name="icons8-home-page-50-2" width="25" height="25"/>
         <image name="unnamed" width="512" height="512"/>
