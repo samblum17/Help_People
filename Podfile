@@ -15,6 +15,9 @@ pod 'Firebase/Functions'     # Enables us to use/call firebase functions
 pod 'Firebase/Messaging'     # Enables us to send push notifications through firebase
 
 pod 'Kingfisher', '~> 4.0'   # handling images and caching images
+pod 'AlamofireImage'
+pod 'Alamofire'
+
 
 pod 'Stripe', '15.0.1'
 
