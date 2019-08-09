@@ -87,8 +87,8 @@
                                                     <constraint firstItem="04W-SV-NzR" firstAttribute="leading" secondItem="MeF-Z5-OKf" secondAttribute="leading" id="hAP-Ic-zXA"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outlet property="preferencesImg" destination="9aj-hr-eyd" id="xeh-2h-bCL"/>
-                                                    <outlet property="preferencesLabel" destination="04W-SV-NzR" id="FJR-Ys-Bsd"/>
+                                                    <outlet property="preferencesImg" destination="9aj-hr-eyd" id="956-za-0nq"/>
+                                                    <outlet property="preferencesLabel" destination="04W-SV-NzR" id="843-Ex-Qm4"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -117,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smf-i3-FMO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1474.4000000000001" y="618.4729064039409"/>
+            <point key="canvasLocation" x="2449" y="1058"/>
         </scene>
         <!--Home Page Controller-->
         <scene sceneID="rdX-6b-cwi">

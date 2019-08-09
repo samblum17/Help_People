@@ -9,5 +9,7 @@
 import UIKit
 
 class preferencesEventCell: UICollectionViewCell {
+    @IBOutlet weak var preferencesImg: UIImageView!
+    @IBOutlet weak var preferencesLabel: UILabel!
     
 }
