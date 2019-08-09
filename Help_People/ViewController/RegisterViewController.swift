@@ -96,6 +96,11 @@ class RegisterViewController: UIViewController {
             "username": userText
         ]
         
+        User.name = fullName
+        User.username = userText
+        User.zipCode = zipText
+        User.profilePicString = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQCsSPdrdZf2hKyx5qHszrMOFMuXj1nLkxU4eu0pfV_8hIczR"
+        
         PreferencesVC.data = parameters
     }
 }

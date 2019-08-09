@@ -11,6 +11,7 @@ import Foundation
 
 struct Event {
     var name: String
+    var location: String
     var type: String
     var date: String
     var description: String
@@ -20,9 +21,10 @@ struct Event {
     var numPeople: Int
     var comments: [String]
     
-    init(name: String, type: String, date: String, description: String, picture: String, money: Double, capacity: Int, numPeple: Int, comments: [String]) {
+    init(name: String, location: String, type: String, date: String, description: String, picture: String, money: Double, capacity: Int, numPeple: Int, comments: [String]) {
         
         self.name = name
+        self.location = location
         self.type = type
         self.date = date
         self.description = description

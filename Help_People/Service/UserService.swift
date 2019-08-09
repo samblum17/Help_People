@@ -8,8 +8,16 @@
 
 import Foundation
 
+let User = _User()
 
-class _UserService {
+class _User {
     
-    init() { }
+    var name: String?
+    var username: String?
+    var zipCode: String?
+    var profilePicString: String?
+    
+    init() {
+
+    }
 }

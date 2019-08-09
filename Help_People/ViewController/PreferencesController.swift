@@ -59,6 +59,7 @@ class PreferencesController: UIViewController,UICollectionViewDelegate, UICollec
         }
         print(data)
     
+        performSegue(withIdentifier: "toProfile", sender: nil)
         
     }
     
@@ -96,5 +97,6 @@ class PreferencesController: UIViewController,UICollectionViewDelegate, UICollec
         }
         
     }
+    
     
 }
