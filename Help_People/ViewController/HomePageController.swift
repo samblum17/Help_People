@@ -26,7 +26,7 @@ class HomePageController: UIViewController {
         events = [
             Event(name: "Running a 5K", location: "Clarendon", type: "public", date: "January 7th" , description: description, picture: "https://images.unsplash.com/photo-1449358070958-884ac9579399?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", money: 5, capacity: 200, numPeple: 12, comments: []),
             Event(name: "Helping the Homeless", location: "Richmond", type: "public", date: "January 7th" , description: description, picture: "https://images.unsplash.com/photo-1541802645635-11f2286a7482?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", money: 5, capacity: 200, numPeple: 12, comments: []),
-            Event(name: "Doing a Marathon", location: "McLean", type: "public", date: "January 7th" , description: description, picture: "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80", money: 5, capacity: 200, numPeple: 12, comments: [])
+            Event(name: "Arlington Marathon", location: "McLean", type: "public", date: "January 7th" , description: description, picture: "https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80", money: 5, capacity: 200, numPeple: 12, comments: [])
         ]
     }
 }

@@ -46,7 +46,7 @@ class ProfileController: UIViewController {
         self.profileImageView.isHidden = true
         
         //
-        var imageURLString = User.profilePicString!
+        var imageURLString = "https://thispersondoesnotexist.com/image"
         var imageURL = URL(string: imageURLString)
         
         let task = URLSession.shared.dataTask(with: imageURL!) { (data,response, error) in
@@ -71,12 +71,13 @@ class ProfileController: UIViewController {
         //Load in profile info
         nameLabel.text = User.name
         usernameLabel.text = User.username
+        eventTableView.reloadData()
         
         
         
         //When no events
         
-        if userEvents.isEmpty {
+        if User.events?.isEmpty ?? true {
             emptyViewLabel.text = "Welcome to Help People!\nTo join your first event, select one from the home page and sign up."
             emptyTableView.isHidden = false
             activityIndicatorView.stopAnimating()
@@ -98,15 +99,15 @@ class ProfileController: UIViewController {
 extension ProfileController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userEvents.count
+        return User.events?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Initial load
         
         let cell = eventTableView.dequeueReusableCell(withIdentifier: "profileEventCell") as! ProfileEventTableViewCell
-        cell.eventTitleLabel.text = userEvents[indexPath.row].name
-        cell.eventLocationLabel.text = userEvents[indexPath.row].location + " • " + userEvents[indexPath.row].date
+        cell.eventTitleLabel.text = User.events?[indexPath.row]
+        cell.eventLocationLabel.text = "Clarendon,VA • " + "08/08/19"
         
         
         

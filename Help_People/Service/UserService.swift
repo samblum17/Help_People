@@ -18,6 +18,7 @@ class _User: Codable {
 //    var profilePicString: String? = "https://thispersondoesnotexist.com/image"
     var status: Bool?
     var events: [String]?
+//    var fakeEvents: [Event]?
     
     init() {
 
