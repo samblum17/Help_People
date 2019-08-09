@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1ECDFB22FCCC440083F29C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1ECDFA22FCCC440083F29C /* UserService.swift */; };
+		9A1ECDFF22FCF8140083F29C /* LoginPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1ECDFE22FCF8140083F29C /* LoginPageController.swift */; };
+		9A1ECE0122FCF8D00083F29C /* SplashPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1ECE0022FCF8D00083F29C /* SplashPageController.swift */; };
 		9A7BA7C322FC9C42008BAD3D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BA7C222FC9C42008BAD3D /* Event.swift */; };
 		9A7BA7C522FCA587008BAD3D /* EventDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BA7C422FCA587008BAD3D /* EventDetailController.swift */; };
 		9A7BA7C722FCA9CB008BAD3D /* CommentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BA7C622FCA9CB008BAD3D /* CommentsCell.swift */; };
@@ -26,6 +29,9 @@
 
 /* Begin PBXFileReference section */
 		920057E2ABB8209A4B0D2F67 /* Pods-Help_People.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help_People.debug.xcconfig"; path = "Target Support Files/Pods-Help_People/Pods-Help_People.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1ECDFA22FCCC440083F29C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		9A1ECDFE22FCF8140083F29C /* LoginPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageController.swift; sourceTree = "<group>"; };
+		9A1ECE0022FCF8D00083F29C /* SplashPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPageController.swift; sourceTree = "<group>"; };
 		9A7BA7C222FC9C42008BAD3D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9A7BA7C422FCA587008BAD3D /* EventDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailController.swift; sourceTree = "<group>"; };
 		9A7BA7C622FCA9CB008BAD3D /* CommentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsCell.swift; sourceTree = "<group>"; };
@@ -77,6 +83,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9A1ECDF922FCCC340083F29C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9A1ECDFA22FCCC440083F29C /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		9A7BA7C122FC9C2C008BAD3D /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +116,8 @@
 				9AF42B9D22FC7DB4007F59A6 /* ProfileController.swift */,
 				9AF42BA022FC9118007F59A6 /* HomePageController.swift */,
 				9A7BA7C422FCA587008BAD3D /* EventDetailController.swift */,
+				9A1ECDFE22FCF8140083F29C /* LoginPageController.swift */,
+				9A1ECE0022FCF8D00083F29C /* SplashPageController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -146,6 +162,7 @@
 		E46B942B22FC664B007FE7D3 /* Help_People */ = {
 			isa = PBXGroup;
 			children = (
+				9A1ECDF922FCCC340083F29C /* Service */,
 				E4D549D022FCB2B4008210B6 /* Profile.swift */,
 				9A7BA7C122FC9C2C008BAD3D /* Models */,
 				9AF42BA222FC9214007F59A6 /* Cells */,
@@ -286,9 +303,12 @@
 				9AF42BA122FC9118007F59A6 /* HomePageController.swift in Sources */,
 				E46B942D22FC664B007FE7D3 /* AppDelegate.swift in Sources */,
 				9A7BA7C722FCA9CB008BAD3D /* CommentsCell.swift in Sources */,
+				9A1ECDFF22FCF8140083F29C /* LoginPageController.swift in Sources */,
+				9A1ECDFB22FCCC440083F29C /* UserService.swift in Sources */,
 				9AF42BA422FC961E007F59A6 /* HomePageCell.swift in Sources */,
 				9A7BA7C322FC9C42008BAD3D /* Event.swift in Sources */,
 				9AF42B9E22FC7DB4007F59A6 /* ProfileController.swift in Sources */,
+				9A1ECE0122FCF8D00083F29C /* SplashPageController.swift in Sources */,
 				9A7BA7C522FCA587008BAD3D /* EventDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

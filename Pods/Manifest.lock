@@ -1,4 +1,7 @@
 PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
@@ -135,6 +138,8 @@ PODS:
   - Stripe (15.0.1)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Core
@@ -147,6 +152,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAnalytics
@@ -171,6 +178,8 @@ SPEC REPOS:
     - Stripe
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   Firebase: dedc9e48ea3f3649ad5f6b982f8a0c73508a14b5
   FirebaseAnalytics: 3fb375bc9d13779add4039716f868d233a473fad
@@ -194,6 +203,6 @@ SPEC CHECKSUMS:
   Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
   Stripe: 2c4d0a88817361a102886315ff452d90f65e898b
 
-PODFILE CHECKSUM: 96e8100c1059ce0641231799884266c5795047ec
+PODFILE CHECKSUM: 5036e01b83d68f80b458ae1ebdf5777c13f8a38f
 
 COCOAPODS: 1.7.0.beta.3
