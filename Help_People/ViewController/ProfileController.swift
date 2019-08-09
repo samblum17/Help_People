@@ -69,7 +69,8 @@ class ProfileController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         //Load in profile info
-        nameLabel.text = User.name
+        var newName = User.name?.replacingOccurrences(of: "+", with: " ")
+        nameLabel.text = newName
         usernameLabel.text = User.username
         eventTableView.reloadData()
         
@@ -106,7 +107,7 @@ extension ProfileController: UITableViewDelegate, UITableViewDataSource {
         //Initial load
         
         let cell = eventTableView.dequeueReusableCell(withIdentifier: "profileEventCell") as! ProfileEventTableViewCell
-        cell.eventTitleLabel.text = User.events?[indexPath.row]
+        cell.eventTitleLabel.text = User.events?[indexPath.row] ?? "Hackathon"
         cell.eventLocationLabel.text = "Clarendon,VA • " + "08/08/19"
         
         

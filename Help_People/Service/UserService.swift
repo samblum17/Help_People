@@ -17,10 +17,10 @@ class _User: Codable {
 //    var zipCode: String?
 //    var profilePicString: String? = "https://thispersondoesnotexist.com/image"
     var status: Bool?
-    var events: [String]?
+    var events: [String?]?
 //    var fakeEvents: [Event]?
     
-    init() {
-
+     init() {
+        
     }
 }

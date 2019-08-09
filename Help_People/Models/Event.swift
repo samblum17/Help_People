@@ -35,4 +35,6 @@ struct Event {
         self.comments = comments
     }
     
+    
+    
 }

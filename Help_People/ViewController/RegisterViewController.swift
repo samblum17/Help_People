@@ -98,6 +98,7 @@ class RegisterViewController: UIViewController {
         
         User.name = fullName
         User.username = userText
+        User.events = []
 //        User.zipCode = zipText
         
 
