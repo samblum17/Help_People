@@ -445,7 +445,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unnamed" translatesAutoresizingMaskIntoConstraints="NO" id="q1l-k6-pLy">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marathons" translatesAutoresizingMaskIntoConstraints="NO" id="q1l-k6-pLy">
                                                     <rect key="frame" x="20" y="7" width="56" height="56"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="56" id="oHe-rD-qg7"/>
@@ -846,8 +846,8 @@
         <image name="icons8-customer-50-2" width="25" height="25"/>
         <image name="icons8-home-page-50" width="25" height="25"/>
         <image name="icons8-home-page-50-2" width="25" height="25"/>
+        <image name="marathons" width="1050" height="700"/>
         <image name="photo-1475483768296-6163e08872a1-2" width="1500" height="1000"/>
-        <image name="unnamed" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="I7R-d5-zt1"/>

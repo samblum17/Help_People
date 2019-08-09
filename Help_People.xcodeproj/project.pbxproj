@@ -324,7 +324,6 @@
 				9A1ECDFB22FCCC440083F29C /* UserService.swift in Sources */,
 				9AF42BA422FC961E007F59A6 /* HomePageCell.swift in Sources */,
 				9A7BA7C322FC9C42008BAD3D /* Event.swift in Sources */,
-				67B98FFF22FD0C520019BE58 /* Styles.swift in Sources */,
 				8706FC4822FD009200420E26 /* RegisterViewController.swift in Sources */,
 				9AF42B9E22FC7DB4007F59A6 /* ProfileController.swift in Sources */,
 				9A1ECE0122FCF8D00083F29C /* SplashPageController.swift in Sources */,

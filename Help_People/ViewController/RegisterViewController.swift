@@ -51,7 +51,7 @@ class RegisterViewController: UIViewController {
         }
         
         fullName = firstText.trimmingCharacters(in: .whitespaces)
-        fullName += " " + surnameText.trimmingCharacters(in: .whitespaces)
+        fullName += "+" + surnameText.trimmingCharacters(in: .whitespaces)
     
             
         performSegue(withIdentifier: "toPreferences", sender: nil)
@@ -104,3 +104,4 @@ class RegisterViewController: UIViewController {
         PreferencesVC.data = parameters
     }
 }
+

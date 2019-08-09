@@ -22,7 +22,42 @@ class HomePageController: UIViewController {
         tableView.delegate = self
         
         let description = "This is a discription of the event. here you will talk about the event and let your users know about things like location"
+        print(User.events)
+        print(User.username)
+        print(User.name)
+        print(User.status)
 
+        let request = "https://c1hack.localtunnel.me/sprints?username=" + User.username!
+        
+        
+        guard let url = URL(string: request) else {return}
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let dataResponse = data,
+                error == nil else {
+                    print(error?.localizedDescription ?? "Response Error")
+                    return }
+            do{
+                //here dataResponse received from a network request
+                let jsonResponse = try JSONSerialization.jsonObject(with:
+                    dataResponse, options: [])
+                guard let jsonArray = jsonResponse as? [[String: Any]] else {
+                    return
+                }
+                
+                for dic in jsonArray{
+                    var eventsList  = (Event(name: dic["name"] as! String, location: dic["location"] as! String, type: dic["type"] as! String, date: dic["date"] as! String , description: dic["description"] as! String, picture: dic["picture"] as! String, money: dic["money"] as! Double, capacity: dic["capacity"] as! Int, numPeple: dic["numPeople"] as! Int, comments: [])
+                    
+                    )
+                }
+                
+            } catch let parsingError {
+                print("Error", parsingError)
+            }
+            
+        }
+        task.resume()
+        
+    
         events = [
             Event(name: "Running a 5K", location: "Clarendon", type: "public", date: "January 7th" , description: description, picture: "https://images.unsplash.com/photo-1449358070958-884ac9579399?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", money: 5, capacity: 200, numPeple: 12, comments: []),
             Event(name: "Helping the Homeless", location: "Richmond", type: "public", date: "January 7th" , description: description, picture: "https://images.unsplash.com/photo-1541802645635-11f2286a7482?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80", money: 5, capacity: 200, numPeple: 12, comments: []),

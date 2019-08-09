@@ -42,6 +42,7 @@ class EventDetailController: UIViewController, UITableViewDelegate, UITableViewD
         let imageURL = URL(string: (event?.pictureURL)!)!
         
         backgroundImage.af_setImage(withURL: imageURL )
+        
 
     }
     
