@@ -10,7 +10,6 @@ import Foundation
 
 
 class _UserService {
-    var profile: Profile?
     
     init() { }
 }
